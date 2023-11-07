@@ -1,11 +1,13 @@
 import { globalStyle } from '@vanilla-extract/css'
 
 import { vars } from '../styles/vars.css'
+import { AllianceNo2 } from '../assets/fonts/AllianceNo2.css'
 
 globalStyle('*', {
     margin: 0,
     padding: 0,
-    boxSizing: 'border-box'
+    boxSizing: 'border-box',
+    fontFamily: AllianceNo2
 })
 
 globalStyle('body', {
