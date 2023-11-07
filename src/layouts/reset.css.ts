@@ -43,7 +43,7 @@ globalStyle('h2', {
 
 globalStyle('p', {
     lineHeight: 1.8,
-    fontSize: '1.15rem',
+    fontSize: '1rem',
     letterSpacing: '-0.01em',
     textAlign: 'justify',
     color: vars.no11textContrastLow,

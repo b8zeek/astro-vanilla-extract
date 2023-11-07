@@ -42,33 +42,42 @@ export const navItem = style({
 })
 
 export const info = style({
-    width: '50%',
+    minHeight: '100vh',
     position: 'fixed',
     left: 0,
     top: 0,
-    display: 'inline-block',
-    verticalAlign: 'top',
-    backgroundImage: `linear-gradient(
-        90deg,
-        ${vars.no3elementBackground},
-        ${vars.no1appBackground}
-    )`,
-    background: 'red',
+    right: 'calc(max(2rem, 50% - 38rem) + 40rem)',
+    zIndex: 1,
+    display: 'flex',
+    alignItems: 'center',
     color: 'white',
-    minHeight: '100vh',
-    zIndex: 1
+    backgroundImage: `radial-gradient(
+        50% 80% at center right,
+        ${vars.no3elementBackground} 0%,
+        ${vars.no1appBackground} 100%
+    )`,
+    borderRight: `1px solid ${vars.no6bordersNonInteractive}`,
+    paddingLeft: 'max(4rem, calc(50% - 38rem))'
+})
+
+export const infoContent = style({
+    width: '24rem',
+    padding: '0 2rem'
 })
 
 export const main = style({
+    width: '100%',
+    maxWidth: '80rem',
     minHeight: '100vh',
     display: 'flex',
     justifyContent: 'flex-end',
-    alignItems: 'flex-start'
+    alignItems: 'flex-start',
+    padding: '0 2rem',
+    margin: '0 auto'
 })
 
 export const content = style({
-    width: '50%',
-    padding: '2rem'
+    maxWidth: '36rem'
 })
 
 export const background = style({
@@ -79,7 +88,7 @@ export const background = style({
     right: 0,
     zIndex: -1,
     backgroundImage: `radial-gradient(
-        50% 80% at top left,
+        30% 10% at top right,
         ${vars.no3elementBackground} 0%,
         ${vars.no1appBackground} 100%
     )`
