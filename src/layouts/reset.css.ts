@@ -11,6 +11,7 @@ globalStyle('*', {
 globalStyle('body', {
     minWidth: '320px',
     minHeight: '100vh',
+    position: 'relative',
     background: vars.no1appBackground
 })
 

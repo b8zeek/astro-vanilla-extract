@@ -41,13 +41,34 @@ export const navItem = style({
     }
 })
 
-export const main = style({
-    maxWidth: 640,
-    width: '100%',
+export const info = style({
+    width: '50%',
+    position: 'fixed',
+    left: 0,
+    top: 0,
+    display: 'inline-block',
+    verticalAlign: 'top',
+    backgroundImage: `linear-gradient(
+        90deg,
+        ${vars.no3elementBackground},
+        ${vars.no1appBackground}
+    )`,
+    background: 'red',
+    color: 'white',
     minHeight: '100vh',
-    padding: '1rem',
-    borderRadius: 8,
-    margin: '0 auto'
+    zIndex: 1
+})
+
+export const main = style({
+    minHeight: '100vh',
+    display: 'flex',
+    justifyContent: 'flex-end',
+    alignItems: 'flex-start'
+})
+
+export const content = style({
+    width: '50%',
+    padding: '2rem'
 })
 
 export const background = style({
