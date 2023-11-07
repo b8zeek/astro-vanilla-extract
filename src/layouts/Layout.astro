@@ -1,7 +1,7 @@
 ---
 import './reset.css';
 
-import { main, background }	from './Layout.css'
+import { header, headerContent, main, background }	from './Layout.css'
 
 interface Props {
 	title: string;
@@ -22,7 +22,11 @@ const { title } = Astro.props;
 	</head>
 	<body>
 		<div class={background} />
-		<button id="theme-toggle">Toggle Theme</button>
+		<header class={header}>
+			<div class={headerContent}>
+			</div>
+			<button id="theme-toggle">Toggle Theme</button>
+		</header>
 		<main class={main}>
 			<slot />
 		</main>
