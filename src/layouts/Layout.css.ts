@@ -4,8 +4,7 @@ import { vars } from '../styles/vars.css'
 
 export const header = style({
     width: '100%',
-    height: '3rem',
-    background: 'red'
+    height: '3rem'
 })
 
 export const headerContent = style({
@@ -15,14 +14,38 @@ export const headerContent = style({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
+    padding: '1rem',
     margin: '0 auto'
+})
+
+export const navigation = style({
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: '1rem'
+})
+
+export const navItem = style({
+    lineHeight: '1rem',
+    fontSize: '1rem',
+    fontWeight: 500,
+    textDecoration: 'none',
+    padding: '0.5rem 1rem',
+    borderRadius: 8,
+    color: vars.no11textContrastLow,
+    backgroundColor: vars.no4elementBackgroundHovered,
+    transition: 'all 0.2s ease-in-out',
+
+    ':hover': {
+        background: vars.no5elementBackgroundActive
+    }
 })
 
 export const main = style({
     maxWidth: 640,
     width: '100%',
     minHeight: '100vh',
-    padding: '2rem',
+    padding: '1rem',
     borderRadius: 8,
     margin: '0 auto'
 })

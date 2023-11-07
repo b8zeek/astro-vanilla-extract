@@ -1,7 +1,7 @@
 ---
 import './reset.css';
 
-import { header, headerContent, main, background }	from './Layout.css'
+import { header, headerContent, navigation, navItem, main, background }	from './Layout.css'
 
 interface Props {
 	title: string;
@@ -24,6 +24,10 @@ const { title } = Astro.props;
 		<div class={background} />
 		<header class={header}>
 			<div class={headerContent}>
+				<nav class={navigation}>
+					<a class={navItem} href="/">Home</a>
+					<a class={navItem} href="/markdown">Markdown</a>
+				</nav>
 			</div>
 			<button id="theme-toggle">Toggle Theme</button>
 		</header>
