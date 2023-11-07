@@ -5,11 +5,26 @@ export const main = style({
     maxWidth: '80rem',
     display: 'flex',
     alignItems: 'flex-start',
-    padding: '0 2rem',
+    padding: '0 1.5rem',
     overflow: 'hidden',
-    margin: '0 auto'
+    margin: '0 auto',
+
+    '@media': {
+        'screen and (min-width: 1024px)': {
+            justifyContent: 'flex-end'
+        }
+    }
 })
 
 export const content = style({
-    maxWidth: '36rem'
+    width: '100%',
+    maxWidth: '32rem',
+    margin: '0 auto',
+
+    '@media': {
+        'screen and (min-width: 1024px)': {
+            maxWidth: '36rem',
+            margin: 'unset'
+        }
+    }
 })
