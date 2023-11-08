@@ -1,13 +1,7 @@
 ---
-import {
-    info,
-    infoContent,
-    card,
-    cardHeading,
-    cardSubheading,
-    avatar
-} from './Info.css'
+import { info, infoContent } from './Info.css'
 
+import PersonCard from '../PersonCard/PersonCard.astro'
 import SocialLink from '../SocialLink/SocialLink.astro'
 import GitHubIcon from '../Icons/GitHub.astro'
 import React from '../Icons/React.astro'
@@ -16,16 +10,7 @@ import React from '../Icons/React.astro'
 <div class={info}>
     <React />
     <div class={infoContent}>
-        <div class={card}>
-            <img
-                class={avatar}
-                src='https://avatars.githubusercontent.com/u/24759563?v=4'
-            />
-            <div>
-                <h2 class={cardHeading}>Mirko Basic</h2>
-                <p class={cardSubheading}>Software Engineer</p>
-            </div>
-        </div>
+        <PersonCard />
         <p>
             Greetings and welcome traveler! 👋
             <br />
