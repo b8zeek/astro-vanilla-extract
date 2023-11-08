@@ -1,0 +1,48 @@
+---
+import GitHubIcon from '../Icons/GitHub.astro'
+import LinkedIn from '../Icons/LinkedIn.astro'
+import Twitter from '../Icons/Twitter.astro'
+import SocialLink from '../SocialLink/SocialLink.astro'
+import { card, avatar, cardHeading, cardSubheading } from './PersonCard.css'
+---
+
+<div class={card}>
+    <img
+        class={avatar}
+        src='https://avatars.githubusercontent.com/u/24759563?v=4'
+    />
+    <div>
+        <h2 class={cardHeading}>Mirko Basic</h2>
+        <!-- <p class={cardSubheading}>Software Engineer</p> -->
+        <ul>
+            <li>
+                <SocialLink href='https://github.com/bejzik8'>
+                    <GitHubIcon width={18} height={18} fill='#aaa' />
+                </SocialLink>
+            </li>
+            <li>
+                <SocialLink href='https://www.linkedin.com/in/basic-mirko/'>
+                    <LinkedIn width={18} height={18} fill='#aaa' />
+                </SocialLink>
+            </li>
+            <li>
+                <SocialLink href='https://twitter.com/bejzik8'>
+                    <Twitter width={18} height={18} fill='#aaa' />
+                </SocialLink>
+            </li>
+        </ul>
+    </div>
+</div>
+<style>
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    li {
+        display: inline-flex;
+        list-style: none;
+        margin-right: 0.25rem;
+    }
+</style>
