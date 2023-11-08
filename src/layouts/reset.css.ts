@@ -53,6 +53,8 @@ globalStyle('h3', {
 globalStyle('p', {
     lineHeight: 1.5,
     fontSize: '1rem',
+    fontFamily: 'Raleyway, system-ui, Avenir, Helvetica, Arial, sans-serif',
+    fontWeight: 400,
     letterSpacing: '-0.01em',
     textAlign: 'justify',
     color: vars.no11textContrastLow,
