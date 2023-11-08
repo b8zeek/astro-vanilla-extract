@@ -43,6 +43,13 @@ globalStyle('h2', {
     marginBottom: '1.25rem'
 })
 
+globalStyle('h3', {
+    lineHeight: '1.25rem',
+    fontSize: '1.5rem',
+    color: vars.no11textContrastLow,
+    marginBottom: '1.25rem'
+})
+
 globalStyle('p', {
     lineHeight: 1.8,
     fontSize: '1rem',
