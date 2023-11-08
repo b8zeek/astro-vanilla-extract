@@ -2,7 +2,7 @@
 layout: ../layouts/Layout.astro
 ---
 
-# h1 Heading 8-)
+# h1 Heading
 
 ## h2 Heading
 

@@ -45,3 +45,8 @@ export const infoContent = style({
         }
     }
 })
+
+export const avatar = style({
+    width: '30%',
+    borderRadius: '50%'
+})
