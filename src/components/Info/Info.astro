@@ -1,19 +1,39 @@
 ---
-import { info, infoContent } from './Info.css'
+import {
+    info,
+    infoContent,
+    card,
+    cardHeading,
+    cardSubheading,
+    avatar
+} from './Info.css'
+
+import GitHubIcon from '../Icons/GitHub.astro'
+import React from '../Icons/React.astro'
 ---
 
 <div class={info}>
+    <React />
     <div class={infoContent}>
+        <div class={card}>
+            <img
+                class={avatar}
+                src='https://avatars.githubusercontent.com/u/24759563?v=4'
+            />
+            <div>
+                <h2 class={cardHeading}>Mirko Basic</h2>
+                <p class={cardSubheading}>Software Engineer</p>
+            </div>
+        </div>
         <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
+            Greetings and welcome traveler! 👋
+            <br />
+             Our mission is to serve as a hub for the consolidation of knowledge
+            related to React and its broader ecosystem. Our wish is to give back
+            to the community! We are really excited to have you here and wish us
+            an amazing journey together! 🎉
         </p>
+        <p></p>
+        <GitHubIcon width={20} height={20} fill='#aaa' />
     </div>
 </div>
