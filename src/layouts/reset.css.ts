@@ -57,5 +57,5 @@ globalStyle('p', {
     textAlign: 'justify',
     color: vars.no11textContrastLow,
     opacity: 0.75,
-    marginBottom: '1rem'
+    marginBottom: '2rem'
 })
