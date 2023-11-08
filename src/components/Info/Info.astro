@@ -8,6 +8,7 @@ import {
     avatar
 } from './Info.css'
 
+import SocialLink from '../SocialLink/SocialLink.astro'
 import GitHubIcon from '../Icons/GitHub.astro'
 import React from '../Icons/React.astro'
 ---
@@ -34,7 +35,9 @@ import React from '../Icons/React.astro'
             to the community! We are really excited to have you here and wish us
             an amazing journey together! 🎉
         </p>
-        <p></p>
-        <GitHubIcon width={20} height={20} fill='#aaa' />
+
+        <SocialLink href='https://github.com/bejzik8'>
+            <GitHubIcon width={20} height={20} fill='#aaa' />
+        </SocialLink>
     </div>
 </div>
