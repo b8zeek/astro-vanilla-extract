@@ -40,7 +40,8 @@ export const infoContent = style({
 
     '@media': {
         'screen and (min-width: 1024px)': {
-            width: '24rem'
+            width: '24rem',
+            margin: 0
         }
     }
 })
