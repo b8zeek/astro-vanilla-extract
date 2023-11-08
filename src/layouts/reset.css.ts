@@ -51,10 +51,11 @@ globalStyle('h3', {
 })
 
 globalStyle('p', {
-    lineHeight: 1.8,
+    lineHeight: 1.5,
     fontSize: '1rem',
     letterSpacing: '-0.01em',
     textAlign: 'justify',
     color: vars.no11textContrastLow,
+    opacity: 0.75,
     marginBottom: '1rem'
 })
