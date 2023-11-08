@@ -13,6 +13,7 @@ export const info = style({
     )`,
     borderBottom: `1px solid ${vars.no6bordersNonInteractive}`,
     padding: '0 1.5rem',
+    position: 'relative',
 
     '@media': {
         'screen and (min-width: 1024px)': {
@@ -37,6 +38,10 @@ export const info = style({
 export const infoContent = style({
     width: '32rem',
     margin: '0 auto',
+    borderRadius: '1rem',
+    padding: '2rem 3rem',
+    backdropFilter: 'blur(3px)',
+    boxShadow: '3px 3px 1rem rgba(0, 0, 0, 0.2)',
 
     '@media': {
         'screen and (min-width: 1024px)': {
@@ -46,7 +51,29 @@ export const infoContent = style({
     }
 })
 
+export const card = style({
+    display: 'flex',
+    alignItems: 'center',
+    gap: '0.5rem',
+    paddingBottom: '1rem',
+    borderBottom: `1px solid ${vars.no6bordersNonInteractive}`,
+    marginBottom: '1rem'
+})
+
+export const cardHeading = style({
+    lineHeight: 1,
+    margin: 0
+})
+
+export const cardSubheading = style({
+    lineHeight: 1,
+    fontSize: '1rem',
+    color: vars.no11textContrastLow,
+    margin: 0
+})
+
 export const avatar = style({
-    width: '30%',
-    borderRadius: '50%'
+    width: '4rem',
+    borderRadius: '50%',
+    border: `4px solid ${vars.no6bordersNonInteractive}`
 })
