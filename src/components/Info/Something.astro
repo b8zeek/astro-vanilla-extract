@@ -445,10 +445,10 @@ import { transform } from './Something.css'
     svg {
         position: absolute;
         z-index: -3;
-        top: 3rem;
+        top: 5rem;
         left: 50%;
         transform: translateX(-50%);
-        opacity: 0.9;
+        opacity: 0.7;
     }
 
     @keyframes fade-in {
@@ -477,7 +477,23 @@ import { transform } from './Something.css'
 
     .dots-animate {
         opacity: 0;
-        animation: fade-in 5s linear forwards;
+        animation: fade-in 3s linear forwards;
+    }
+
+    .dots-animate {
+        animation-delay: 1s;
+    }
+
+    .dots-animate:nth-child(4n) {
+        animation-delay: 2s;
+    }
+
+    .dots-animate:nth-child(4n + 1) {
+        animation-delay: 3s;
+    }
+
+    .dots-animate:nth-child(4n + 2) {
+        animation-delay: 4s;
     }
 
     .circle-full-visibility {
@@ -493,6 +509,6 @@ import { transform } from './Something.css'
     .path-animate {
         opacity: 0;
         fill: transparent;
-        animation: dash 9s linear 3s forwards;
+        animation: dash 3s linear 5s forwards;
     }
 </style>
