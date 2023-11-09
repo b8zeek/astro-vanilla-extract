@@ -18,3 +18,25 @@ export const getBlogs = async () => {
 
     return blogs
 }
+
+export const getBlogContent = async () => {
+    let blogsWithContent: (Repository & { content: string })[] = []
+
+    try {
+        const blogs = await getBlogs()
+
+        blogsWithContent = await Promise.all(
+            blogs.map(async blog => {
+                const { data } = await octokit.request(
+                    `GET /repos/react-serbia/${blog.name}/contents/README.md`
+                )
+
+                return { ...blog, content: atob(data.content) }
+            })
+        )
+    } catch (error) {
+        console.error(error)
+    }
+
+    return blogsWithContent
+}
