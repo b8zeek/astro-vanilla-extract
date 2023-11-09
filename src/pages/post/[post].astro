@@ -3,6 +3,7 @@ import { marked } from 'marked'
 import Layout from '../../layouts/Layout.astro'
 import { getBlogContent } from '../../services/octokit'
 import { type Repository } from '../../models'
+import { anchor } from './post.css'
 
 interface Props {
     blog: Repository & { content: string }
@@ -25,7 +26,9 @@ const { content } = Astro.props
 ---
 
 <Layout title='Welcome to Astro.'>
-    <div class='container' set:html={content} />
+    <div class='container' set:html={content}>
+        <a class={anchor} href='/post'>Back</a>
+    </div>
 </Layout>
 
 <style>
