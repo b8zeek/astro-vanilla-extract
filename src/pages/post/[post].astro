@@ -1,0 +1,27 @@
+---
+import { marked } from 'marked'
+import Layout from '../../layouts/Layout.astro'
+import { getBlogContent } from '../../services/octokit'
+import { type Repository } from '../../models'
+
+interface Props {
+    blog: Repository & { content: string }
+    content: string
+}
+
+export async function getStaticPaths() {
+    const blogContents = await getBlogContent()
+
+    return blogContents.map(blog => ({
+        params: { post: blog.name },
+        props: {
+            blog,
+            content: marked.parse(blog.content)
+        }
+    }))
+}
+
+const { blog, content } = Astro.props
+---
+
+<Layout title='Welcome to Astro.' set:html={content} />
