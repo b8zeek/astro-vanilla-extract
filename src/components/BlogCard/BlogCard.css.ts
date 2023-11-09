@@ -10,3 +10,8 @@ export const container = style({
     backgroundImage: `linear-gradient(${vars.no3elementBackground}, ${vars.no1appBackground})`,
     marginBottom: '2rem'
 })
+
+export const description = style({
+    textDecoration: 'none',
+    marginBottom: 0
+})

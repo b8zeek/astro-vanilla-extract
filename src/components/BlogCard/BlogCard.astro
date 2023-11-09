@@ -1,6 +1,6 @@
 ---
 import { type Repository } from '../../models'
-import { container } from './BlogCard.css'
+import { container, description } from './BlogCard.css'
 
 interface Props {
     blog: Repository
@@ -9,9 +9,9 @@ interface Props {
 const { blog } = Astro.props
 ---
 
-<a href={blog.url}>
+<a href=`post/${blog.name}`>
     <div class={container}>
         <h2>{blog.name}</h2>
-        <p>{blog.description}</p>
+        <p class={description}>{blog.description}</p>
     </div>
 </a>
