@@ -21,7 +21,15 @@ export async function getStaticPaths() {
     }))
 }
 
-const { blog, content } = Astro.props
+const { content } = Astro.props
 ---
 
-<Layout title='Welcome to Astro.' set:html={content} />
+<Layout title='Welcome to Astro.'>
+    <div class='container' set:html={content} />
+</Layout>
+
+<style>
+    .container {
+        padding: 10rem 0;
+    }
+</style>
