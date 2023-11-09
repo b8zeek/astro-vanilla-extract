@@ -17,15 +17,13 @@ import { transform } from './Something.css'
         </filter>
     </defs>
     <path
+        class='path-animate'
         stroke='white'
         stroke-opacity='0.2'
         stroke-dasharray='1'
         stroke-dashoffset='1'
         pathLength='1'
-        fill='transparent'
         d='M 247,103L261,86L307,104L357,36'
-        class='invisible'
-        style='stroke-dashoffset: 0; visibility: visible;'
     >
     </path>
     <g class='opacity-0' style='opacity: 1;'>
@@ -61,15 +59,13 @@ import { transform } from './Something.css'
         ></circle>
     </g>
     <path
+        class='path-animate'
         stroke='white'
         stroke-opacity='0.2'
         stroke-dasharray='1'
         stroke-dashoffset='1'
         pathLength='1'
-        fill='transparent'
         d='M 586,120L516,100L491,62L440,107L477,180L516,100'
-        class='invisible'
-        style='stroke-dashoffset: 0; visibility: visible; fill: rgba(255, 255, 255, 0.02);'
     >
     </path>
     <g class='opacity-0' style='opacity: 1;'>
@@ -113,15 +109,13 @@ import { transform } from './Something.css'
         ></circle>
     </g>
     <path
+        class='path-animate'
         stroke='white'
         stroke-opacity='0.2'
         stroke-dasharray='1'
         stroke-dashoffset='1'
         pathLength='1'
-        fill='transparent'
         d='M 733,100L803,120L879,113L823,164L803,120'
-        class='invisible'
-        style='stroke-dashoffset: 0; visibility: visible; fill: rgba(255, 255, 255, 0.02);'
     >
     </path>
     <g class='opacity-0' style='opacity: 1;'>
@@ -442,16 +436,23 @@ import { transform } from './Something.css'
 
     @keyframes dash {
         from {
-            stroke-dashoffset: 320;
+            stroke-dashoffset: 1;
+            opacity: 0;
+            visibility: hidden;
+            fill: transparent;
         }
         to {
             stroke-dashoffset: 0;
+            opacity: 1;
+            visibility: visible;
+            fill: rgba(255, 255, 255, 0.01);
         }
     }
 
     .path-animate {
-        stroke-dasharray: 320;
-        stroke-dashoffset: 0;
-        animation: dash 3s linear infinite;
+        opacity: 0;
+        visibility: visible;
+        fill: transparent;
+        animation: dash 9s linear 3s forwards;
     }
 </style>
