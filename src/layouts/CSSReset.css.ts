@@ -61,3 +61,7 @@ globalStyle('p', {
     opacity: 0.75,
     marginBottom: '2rem'
 })
+
+globalStyle('a', {
+    textDecoration: 'none'
+})
