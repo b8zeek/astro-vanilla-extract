@@ -1,10 +1,4 @@
----
-import { transform } from './Something.css'
----
-
 <svg
-    class={transform}
-    width='90%'
     viewBox='0 0 881 211'
     fill='white'
     aria-hidden='true'
@@ -443,12 +437,14 @@ import { transform } from './Something.css'
 
 <style>
     svg {
+        width: 90%;
         position: absolute;
         z-index: -3;
         top: 5rem;
-        left: 50%;
-        transform: translateX(-50%);
-        opacity: 0.7;
+        left: 5%;
+        opacity: 0.9;
+        transform: translate(0, 0) rotate(5deg);
+        transformorigin: top left;
     }
 
     @keyframes fade-in {
@@ -509,6 +505,6 @@ import { transform } from './Something.css'
     .path-animate {
         opacity: 0;
         fill: transparent;
-        animation: dash 3s linear 5s forwards;
+        animation: dash 1.5s linear 5s forwards;
     }
 </style>
