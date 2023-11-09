@@ -40,7 +40,6 @@ export const infoContent = style({
     width: '32rem',
     margin: '0 auto',
     borderRadius: '1rem',
-    backdropFilter: 'blur(3px)',
     padding: '2rem',
     boxShadow: '3px 3px 1rem rgba(0, 0, 0, 0.2)',
 
