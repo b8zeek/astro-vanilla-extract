@@ -1,6 +1,6 @@
 import { createTheme, createThemeContract } from '@vanilla-extract/css'
 
-import { iris, irisDark } from '@radix-ui/colors'
+import { sand, sandDark } from '@radix-ui/colors'
 
 export const vars = createThemeContract({
     no1appBackground: null,
@@ -22,39 +22,39 @@ export const vars = createThemeContract({
 })
 
 export const light = createTheme(vars, {
-    no1appBackground: iris.iris1,
-    no2subtleBackground: iris.iris2,
+    no1appBackground: sand.sand1,
+    no2subtleBackground: sand.sand2,
 
-    no3elementBackground: iris.iris3,
-    no4elementBackgroundHovered: iris.iris4,
-    no5elementBackgroundActive: iris.iris5,
+    no3elementBackground: sand.sand3,
+    no4elementBackgroundHovered: sand.sand4,
+    no5elementBackgroundActive: sand.sand5,
 
-    no6bordersNonInteractive: iris.iris6,
-    no7bordersInteractive: iris.iris7,
-    no8bordersInteractiveFocused: iris.iris8,
+    no6bordersNonInteractive: sand.sand6,
+    no7bordersInteractive: sand.sand7,
+    no8bordersInteractiveFocused: sand.sand8,
 
-    no9solidBackground: iris.iris9,
-    no10solidBackgroundHovered: iris.iris10,
+    no9solidBackground: sand.sand9,
+    no10solidBackgroundHovered: sand.sand10,
 
-    no11textContrastLow: iris.iris11,
-    no12textContrastHigh: iris.iris12
+    no11textContrastLow: sand.sand11,
+    no12textContrastHigh: sand.sand12
 })
 
 export const dark = createTheme(vars, {
-    no1appBackground: irisDark.iris1,
-    no2subtleBackground: irisDark.iris2,
+    no1appBackground: sandDark.sand1,
+    no2subtleBackground: sandDark.sand2,
 
-    no3elementBackground: irisDark.iris3,
-    no4elementBackgroundHovered: irisDark.iris4,
-    no5elementBackgroundActive: irisDark.iris5,
+    no3elementBackground: sandDark.sand3,
+    no4elementBackgroundHovered: sandDark.sand4,
+    no5elementBackgroundActive: sandDark.sand5,
 
-    no6bordersNonInteractive: irisDark.iris6,
-    no7bordersInteractive: irisDark.iris7,
-    no8bordersInteractiveFocused: irisDark.iris8,
+    no6bordersNonInteractive: sandDark.sand6,
+    no7bordersInteractive: sandDark.sand7,
+    no8bordersInteractiveFocused: sandDark.sand8,
 
-    no9solidBackground: irisDark.iris9,
-    no10solidBackgroundHovered: irisDark.iris10,
+    no9solidBackground: sandDark.sand9,
+    no10solidBackgroundHovered: sandDark.sand10,
 
-    no11textContrastLow: irisDark.iris11,
-    no12textContrastHigh: irisDark.iris12
+    no11textContrastLow: sandDark.sand11,
+    no12textContrastHigh: sandDark.sand12
 })
