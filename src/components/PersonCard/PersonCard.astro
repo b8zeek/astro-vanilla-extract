@@ -1,14 +1,34 @@
 ---
-import { card, avatar, cardHeading, cardSubheading } from './PersonCard.css'
+import SocialLinks from '../SocialLinks/SocialLinks.astro'
+import {
+    container,
+    card,
+    avatar,
+    cardHeading,
+    cardSubheading
+} from './PersonCard.css'
 ---
 
-<div class={card}>
-    <img
-        class={avatar}
-        src='https://avatars.githubusercontent.com/u/24759563?v=4'
-    />
-    <div>
-        <h2 class={cardHeading}>Mirko Basic</h2>
-        <p class={cardSubheading}>Software Enthusiast</p>
+<div class={container}>
+    <div class={card}>
+        <img
+            class={avatar}
+            src='https://avatars.githubusercontent.com/u/24759563?v=4'
+        />
+        <div>
+            <h2 class={cardHeading}>Mirko Basic</h2>
+            <p class={cardSubheading}>Software Enthusiast</p>
+        </div>
     </div>
+    <p>
+        Greetings and welcome traveler! 👋
+        <br />
+        <br />
+         Our mission is to serve as a hub for the consolidation of knowledge
+        related to React and its broader ecosystem. Our wish is to give back to
+        the community! We are really excited to have you here and wish us an
+        amazing journey together! 🎉
+    </p>
+
+    <SocialLinks />
 </div>

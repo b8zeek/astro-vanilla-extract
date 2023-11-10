@@ -2,6 +2,18 @@ import { style } from '@vanilla-extract/css'
 
 import { vars } from '../../styles/vars.css'
 
+export const container = style({
+    borderRadius: '1rem',
+    padding: '2rem',
+    boxShadow: '3px 3px 1rem rgba(0, 0, 0, 0.2)',
+
+    '@media': {
+        'screen and (min-width: 1024px)': {
+            padding: '2rem 3rem'
+        }
+    }
+})
+
 export const card = style({
     display: 'flex',
     alignItems: 'center',
