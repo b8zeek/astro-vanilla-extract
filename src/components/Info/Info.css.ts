@@ -38,6 +38,7 @@ export const info = style({
 
 export const infoContent = style({
     width: '32rem',
+    position: 'relative',
     margin: '0 auto',
 
     '@media': {
