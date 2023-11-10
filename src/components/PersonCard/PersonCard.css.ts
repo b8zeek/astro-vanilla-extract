@@ -6,6 +6,7 @@ export const container = style({
     borderRadius: '1rem',
     padding: '2rem',
     boxShadow: '3px 3px 1rem rgba(0, 0, 0, 0.2)',
+    backgroundColor: `${vars.no1appBackground}80`,
 
     '@media': {
         'screen and (min-width: 1024px)': {
