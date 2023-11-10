@@ -7,16 +7,19 @@ export const button = style({
     position: 'absolute',
     top: '0.5rem',
     right: '0.5rem',
-    border: `0.25rem solid ${vars.no11textContrastLow}`,
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'flex-start',
+    padding: '0.2rem',
+    border: 'none',
     borderRadius: '1rem',
     background: vars.no11textContrastLow,
-    boxSizing: 'content-box',
     cursor: 'pointer'
 })
 
 export const buttonIcon = style({
-    width: '0.5rem',
-    height: '1rem',
+    width: '0.3rem',
+    height: '0.6rem',
     borderRadius: '1rem 0 0 1rem',
     background: vars.no2subtleBackground
 })
