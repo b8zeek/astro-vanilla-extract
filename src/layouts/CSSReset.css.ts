@@ -11,10 +11,11 @@ globalStyle('*', {
 })
 
 globalStyle('body', {
-    minWidth: '320px',
+    minWidth: '100vw',
     minHeight: '100vh',
     position: 'relative',
-    background: vars.no1appBackground
+    background: vars.no1appBackground,
+    overflowX: 'hidden'
 })
 
 globalStyle(':root', {

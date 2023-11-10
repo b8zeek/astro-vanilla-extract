@@ -12,7 +12,8 @@ export const main = style({
 
     '@media': {
         'screen and (min-width: 1024px)': {
-            justifyContent: 'flex-end'
+            justifyContent: 'flex-end',
+            padding: 0
         }
     }
 })
@@ -20,6 +21,7 @@ export const main = style({
 export const content = style({
     width: '100%',
     maxWidth: '32rem',
+    position: 'relative',
     margin: '0 auto',
 
     '@media': {
