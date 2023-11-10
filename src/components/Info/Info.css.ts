@@ -23,7 +23,7 @@ export const info = style({
             left: 0,
             bottom: 0,
             right: 'calc(max(2rem, 50% - 38rem) + 40rem)',
-            paddingLeft: 'max(4rem, calc(50% - 38rem))',
+            padding: '0 0 0 max(4rem, calc(50% - 38rem))',
             alignItems: 'center',
             backgroundImage: `radial-gradient(
                 50% 80% at center right,
@@ -43,6 +43,11 @@ export const infoContent = style({
     '@media': {
         'screen and (min-width: 1024px)': {
             width: '24rem',
+            display: 'flex',
+            justifyContent: 'center',
+            flexDirection: 'column',
+            textAlign: 'center',
+            minHeight: '100%',
             margin: 0
         }
     }
