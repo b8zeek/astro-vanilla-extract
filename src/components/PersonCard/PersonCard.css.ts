@@ -4,7 +4,7 @@ import { vars } from '../../styles/vars.css'
 
 export const card = style({
     display: 'flex',
-    alignItems: 'center',
+    alignItems: 'flex-end',
     gap: '0.5rem',
     paddingBottom: '1rem',
     borderBottom: `1px solid ${vars.no6bordersNonInteractive}`,
