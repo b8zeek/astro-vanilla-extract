@@ -39,14 +39,10 @@ export const info = style({
 export const infoContent = style({
     width: '32rem',
     margin: '0 auto',
-    borderRadius: '1rem',
-    padding: '2rem',
-    boxShadow: '3px 3px 1rem rgba(0, 0, 0, 0.2)',
 
     '@media': {
         'screen and (min-width: 1024px)': {
             width: '24rem',
-            padding: '2rem 3rem',
             margin: 0
         }
     }
