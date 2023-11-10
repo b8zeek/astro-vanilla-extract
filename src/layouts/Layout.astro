@@ -3,6 +3,8 @@ import './CSSReset.css'
 
 import Background from '../components/Background/Background.astro'
 import Info from '../components/Info/Info.astro'
+import ThemeSwitch from '../components/ThemeSwitch/ThemeSwitch.astro'
+
 import { content, main } from './Layout.css'
 
 interface Props {
@@ -31,6 +33,7 @@ const { title } = Astro.props
     <body>
         <Background />
         <Info />
+        <ThemeSwitch />
         <main class={main}>
             <content class={content}>
                 <slot />

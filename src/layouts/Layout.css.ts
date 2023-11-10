@@ -3,6 +3,7 @@ import { style } from '@vanilla-extract/css'
 export const main = style({
     width: '100%',
     maxWidth: '80rem',
+    position: 'relative',
     display: 'flex',
     alignItems: 'flex-start',
     padding: '0 1.5rem',
