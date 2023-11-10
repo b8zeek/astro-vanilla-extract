@@ -1,0 +1,51 @@
+---
+import SocialLink from '../SocialLink/SocialLink.astro'
+import GitHub from '../Icons/GitHub.astro'
+import LinkedIn from '../Icons/LinkedIn.astro'
+import Twitter from '../Icons/Twitter.astro'
+
+import { vars } from '../../styles/vars.css'
+---
+
+<ul>
+    <li>
+        <SocialLink href='https://github.com/bejzik8'>
+            <GitHub
+                width={20}
+                height={20}
+                fill={vars.no8bordersInteractiveFocused}
+            />
+        </SocialLink>
+    </li>
+    <li>
+        <SocialLink href='https://www.linkedin.com/in/basic-mirko/'>
+            <LinkedIn
+                width={20}
+                height={20}
+                fill={vars.no8bordersInteractiveFocused}
+            />
+        </SocialLink>
+    </li>
+    <li>
+        <SocialLink href='https://twitter.com/bejzik8'>
+            <Twitter
+                width={20}
+                height={20}
+                fill={vars.no8bordersInteractiveFocused}
+            />
+        </SocialLink>
+    </li>
+</ul>
+<style>
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    li {
+        display: inline-flex;
+        list-style: none;
+        margin-right: 0.5rem;
+    }
+</style>
