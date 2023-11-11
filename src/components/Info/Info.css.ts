@@ -39,7 +39,7 @@ export const infoContent = style({
     width: '32rem',
     minHeight: '100vh',
     position: 'relative',
-    padding: '5rem 1.5rem 0',
+    padding: '0 1.5rem',
     margin: '0 auto',
 
     '@media': {
@@ -57,5 +57,5 @@ export const infoContent = style({
 
 export const subheading = style({
     fontStyle: 'italic',
-    marginTop: '-1rem'
+    margin: '-0.75rem 0 5rem'
 })

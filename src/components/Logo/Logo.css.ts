@@ -14,8 +14,8 @@ export const logo = style({
 })
 
 export const infoComponentLogoStyles = style({
-    top: '1rem',
-    left: '1.5rem',
+    fontSize: '3rem',
+    marginTop: '5rem',
 
     '@media': {
         'screen and (min-width: 1024px)': {
