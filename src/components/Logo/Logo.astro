@@ -2,18 +2,18 @@
 import {
     logo,
     infoComponentLogoStyles,
-    layoutComponentLogoStyles
+    headerComponentLogoStyles
 } from './Logo.css'
 
 interface Props {
-    component: 'info' | 'layout'
+    component: 'info' | 'header'
 }
 
 const { component } = Astro.props
 ---
 
 <h1
-    class:list=`${logo} ${component === 'info' && infoComponentLogoStyles} ${component === 'layout' && layoutComponentLogoStyles}`
+    class:list=`${logo} ${component === 'info' && infoComponentLogoStyles} ${component === 'header' && headerComponentLogoStyles}`
 >
     React Serbia
 </h1>
