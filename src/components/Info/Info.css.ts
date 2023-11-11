@@ -57,5 +57,11 @@ export const infoContent = style({
 
 export const subheading = style({
     fontStyle: 'italic',
-    margin: '-0.75rem 0 5rem'
+    margin: '-0.75rem 0 5rem',
+
+    '@media': {
+        'screen and (min-width: 1024px)': {
+            display: 'none'
+        }
+    }
 })

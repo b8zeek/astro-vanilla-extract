@@ -4,7 +4,7 @@ import './CSSReset.css'
 import Background from '../components/Background/Background.astro'
 import Info from '../components/Info/Info.astro'
 import ThemeSwitch from '../components/ThemeSwitch/ThemeSwitch.astro'
-import Logo from '../components/Logo/Logo.astro'
+import Header from '../components/Header/Header.astro'
 
 import { content, main } from './Layout.css'
 
@@ -34,10 +34,10 @@ const { title } = Astro.props
     <body>
         <Background />
         <Info />
-        <Logo component='layout' />
         <ThemeSwitch />
         <main class={main}>
             <content class={content}>
+                <Header />
                 <slot />
             </content>
         </main>
