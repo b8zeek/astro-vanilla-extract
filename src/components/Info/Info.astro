@@ -1,15 +1,18 @@
 ---
-import { info, infoContent } from './Info.css'
+import { info, infoContent, subheading } from './Info.css'
 import PersonCard from '../PersonCard/PersonCard.astro'
 import React from '../Icons/React.astro'
 import Galaxy from './Galaxy.astro'
 import Footer from '../Footer/Footer.astro'
+import Logo from '../Logo/Logo.astro'
 ---
 
 <div class={info}>
     <Galaxy />
     <React />
     <div class={infoContent}>
+        <Logo component='info' />
+        <p class={subheading}>React Ecosystem Knowledge Hub</p>
         <PersonCard />
         <Footer />
     </div>
