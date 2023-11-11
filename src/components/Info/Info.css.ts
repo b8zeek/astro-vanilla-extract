@@ -13,7 +13,6 @@ export const info = style({
         ${vars.no1appBackground} 100%
     )`,
     borderBottom: `1px solid ${vars.no6bordersNonInteractive}`,
-    padding: '7rem 1.5rem',
     overflow: 'hidden',
 
     '@media': {
@@ -38,7 +37,9 @@ export const info = style({
 
 export const infoContent = style({
     width: '32rem',
+    minHeight: '100vh',
     position: 'relative',
+    padding: '5rem 1.5rem 0',
     margin: '0 auto',
 
     '@media': {
@@ -48,8 +49,13 @@ export const infoContent = style({
             justifyContent: 'center',
             flexDirection: 'column',
             textAlign: 'center',
-            minHeight: '100%',
+            padding: 0,
             margin: 0
         }
     }
+})
+
+export const subheading = style({
+    fontStyle: 'italic',
+    marginTop: '-1rem'
 })
