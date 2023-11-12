@@ -1,12 +1,14 @@
 ---
 import Logo from '../Logo/Logo.astro'
+
+import { anchor } from './Header.css'
 ---
 
 <header>
     <Logo component='header' />
     <nav>
-        <a href='/'>Home</a>
-        <a href='/post'>Posts</a>
+        <a class={anchor} href='/'>Home</a>
+        <a class={anchor} href='/post'>Posts</a>
     </nav>
 </header>
 
