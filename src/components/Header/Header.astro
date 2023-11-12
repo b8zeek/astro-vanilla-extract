@@ -4,4 +4,21 @@ import Logo from '../Logo/Logo.astro'
 
 <header>
     <Logo component='header' />
+    <nav>
+        <a href='/'>Home</a>
+        <a href='/post'>Posts</a>
+    </nav>
 </header>
+
+<style>
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav {
+        display: flex;
+        gap: 1rem;
+    }
+</style>
