@@ -14,7 +14,7 @@ import { anchor } from './Header.css'
 
 <style>
     header {
-        display: flex;
+        display: none;
         justify-content: space-between;
         align-items: center;
     }
@@ -22,5 +22,11 @@ import { anchor } from './Header.css'
     nav {
         display: flex;
         gap: 1rem;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        header {
+            display: flex;
+        }
     }
 </style>
