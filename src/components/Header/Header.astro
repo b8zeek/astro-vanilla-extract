@@ -15,10 +15,16 @@ import { anchor } from './Header.css'
 <style>
     header {
         width: 100%;
-        display: flex;
+        display: none;
         justify-content: space-between;
         position: absolute;
         top: 0;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        header {
+            display: flex;
+        }
     }
 
     nav {
