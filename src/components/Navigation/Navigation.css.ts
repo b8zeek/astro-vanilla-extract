@@ -10,13 +10,19 @@ export const nav = style({
     transform: 'translateX(-50%)',
     zIndex: 5,
     borderRadius: '100px',
-    overflow: 'hidden'
+    overflow: 'hidden',
+
+    '@media': {
+        'screen and (min-width: 1024px)': {
+            display: 'none'
+        }
+    }
 })
 
 export const anchor = style({
     lineHeight: 1,
     fontSize: '1rem',
-    padding: '0.25rem 1rem',
+    padding: '0.5rem 1rem',
     color: vars.no11textContrastLow,
     backgroundColor: vars.no6bordersNonInteractive
 })
