@@ -4,6 +4,11 @@ import { vars } from '../../styles/vars.css'
 export const nav = style({
     display: 'inline-flex',
     gap: '2px',
+    position: 'fixed',
+    bottom: '0.5rem',
+    left: '50%',
+    transform: 'translateX(-50%)',
+    zIndex: 5,
     borderRadius: '100px',
     overflow: 'hidden'
 })
@@ -12,5 +17,6 @@ export const anchor = style({
     lineHeight: 1,
     fontSize: '1rem',
     padding: '0.25rem 1rem',
-    backgroundColor: vars.no7bordersInteractive
+    color: vars.no11textContrastLow,
+    backgroundColor: vars.no6bordersNonInteractive
 })
