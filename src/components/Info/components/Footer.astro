@@ -9,11 +9,18 @@ import AstroSVG from '../../Icons/AstroSVG.astro'
 
 <style>
     footer {
+        display: none;
         width: 100%;
         position: absolute;
         bottom: 0;
         left: 0;
         padding: 0 0 0.5rem 3rem;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        footer {
+            display: block;
+        }
     }
 
     p {

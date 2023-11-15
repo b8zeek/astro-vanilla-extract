@@ -38,12 +38,13 @@ export const info = style({
 export const infoContent = style({
     width: '32rem',
     position: 'relative',
-    padding: '0 1.5rem',
+    padding: '7rem 1.5rem',
     margin: '0 auto',
 
     '@media': {
         'screen and (min-width: 1024px)': {
             width: '24rem',
+            minHeight: '100vh',
             display: 'flex',
             justifyContent: 'center',
             flexDirection: 'column',
