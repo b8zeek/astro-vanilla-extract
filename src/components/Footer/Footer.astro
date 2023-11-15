@@ -1,25 +1,14 @@
 ---
 import AstroSVG from '../Icons/AstroSVG.astro'
+
+import { footer, paragraph } from './Footer.css'
 ---
 
-<footer>
-    <p>Copyright © 2023 ⚛️ React Serbia. All Rights Reserved.</p>
-    <p>Created with: 4, 3, 2, 1... <AstroSVG fill='#fff' /></p>
+<footer class={footer}>
+    <p class={paragraph}>
+        Copyright © 2023 ⚛️ React Serbia. All Rights Reserved.
+    </p>
+    <p class={paragraph}>
+        Created with: 4, 3, 2, 1... <AstroSVG fill='#fff' />
+    </p>
 </footer>
-
-<style>
-    footer {
-        width: 100%;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        padding: 0 0 0.5rem 3rem;
-    }
-
-    p {
-        line-height: 2;
-        font-size: 0.6rem;
-        text-align: center;
-        margin: 0;
-    }
-</style>
