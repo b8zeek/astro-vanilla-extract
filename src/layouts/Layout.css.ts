@@ -5,6 +5,7 @@ export const main = style({
     maxWidth: '80rem',
     position: 'relative',
     display: 'flex',
+    flexDirection: 'column',
     alignItems: 'flex-start',
     padding: '0 1.5rem',
     overflow: 'hidden',

@@ -5,6 +5,7 @@ import Background from '../components/Background/Background.astro'
 import Info from '../components/Info/Info.astro'
 import ThemeSwitch from '../components/ThemeSwitch/ThemeSwitch.astro'
 import Navigation from '../components/Navigation/Navigation.astro'
+import Footer from '../components/Footer/Footer.astro'
 
 import { content, main } from './Layout.css'
 
@@ -41,6 +42,8 @@ const { title } = Astro.props
                 <slot />
             </content>
         </main>
+        <Footer />
+
         <script>
             import { light, dark } from '../styles/vars.css'
 
