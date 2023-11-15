@@ -37,7 +37,6 @@ export const info = style({
 
 export const infoContent = style({
     width: '32rem',
-    minHeight: '100vh',
     position: 'relative',
     padding: '0 1.5rem',
     margin: '0 auto',
