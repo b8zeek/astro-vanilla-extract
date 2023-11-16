@@ -6,7 +6,7 @@ export const main = style({
     position: 'relative',
     display: 'flex',
     flexDirection: 'column',
-    alignItems: 'flex-start',
+    alignItems: 'flex-end',
     padding: '0 1.5rem',
     overflow: 'hidden',
     margin: '0 auto',
@@ -22,6 +22,7 @@ export const main = style({
 export const content = style({
     width: '100%',
     maxWidth: '32rem',
+    minHeight: '100vh',
     position: 'relative',
     margin: '0 auto',
 
