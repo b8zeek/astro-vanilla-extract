@@ -87,3 +87,10 @@ globalStyle('p', {
 globalStyle('a', {
     textDecoration: 'none'
 })
+
+globalStyle('hr', {
+    height: '0.25rem',
+    backgroundColor: vars.no10solidBackgroundHovered,
+    border: 'none',
+    margin: '2rem 0'
+})
