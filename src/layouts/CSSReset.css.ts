@@ -100,3 +100,10 @@ globalStyle('blockquote', {
     borderLeft: `0.25rem solid ${vars.no6bordersNonInteractive}`,
     marginBottom: '1rem'
 })
+
+globalStyle('pre', {
+    lineHeight: 1.45,
+    padding: '1rem',
+    backgroundColor: vars.no3elementBackground,
+    marginBottom: '1rem'
+})
