@@ -123,10 +123,24 @@ globalStyle('li', {
     color: vars.no11textContrastLow
 })
 
+globalStyle('table', {
+    borderCollapse: 'collapse',
+    marginBottom: '1rem'
+})
+
 globalStyle('th', {
     color: vars.no11textContrastLow
 })
 
 globalStyle('td', {
     color: vars.no11textContrastLow
+})
+
+globalStyle('th, td', {
+    padding: '0.5rem 0.75rem',
+    border: `1px solid ${vars.no6bordersNonInteractive}`
+})
+
+globalStyle('img', {
+    width: '100%'
 })
