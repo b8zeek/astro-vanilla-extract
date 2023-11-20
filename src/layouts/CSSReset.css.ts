@@ -107,3 +107,9 @@ globalStyle('pre', {
     backgroundColor: vars.no3elementBackground,
     marginBottom: '1rem'
 })
+
+globalStyle('ul', {
+    lineHeight: 1.5,
+    paddingLeft: '2rem',
+    marginBottom: '1rem'
+})
