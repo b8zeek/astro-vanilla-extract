@@ -113,3 +113,9 @@ globalStyle('ul', {
     paddingLeft: '2rem',
     marginBottom: '1rem'
 })
+
+globalStyle('ol', {
+    lineHeight: 1.5,
+    paddingLeft: '2rem',
+    marginBottom: '1rem'
+})
