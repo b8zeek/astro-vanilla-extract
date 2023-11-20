@@ -38,17 +38,38 @@ globalStyle('h1', {
 })
 
 globalStyle('h2', {
-    lineHeight: '1.5rem',
-    fontSize: '1.75rem',
+    lineHeight: '2rem',
+    fontSize: '2rem',
     color: vars.no12textContrastHigh,
     marginBottom: '1.25rem'
 })
 
 globalStyle('h3', {
-    lineHeight: '1.25rem',
-    fontSize: '1.5rem',
+    lineHeight: '1.75rem',
+    fontSize: '1.75rem',
     color: vars.no11textContrastLow,
     marginBottom: '1.25rem'
+})
+
+globalStyle('h4', {
+    lineHeight: '1.5rem',
+    fontSize: '1.5rem',
+    color: vars.no11textContrastLow,
+    marginBottom: '1rem'
+})
+
+globalStyle('h5', {
+    lineHeight: '1.25rem',
+    fontSize: '1.25rem',
+    color: vars.no11textContrastLow,
+    marginBottom: '1rem'
+})
+
+globalStyle('h6', {
+    lineHeight: '1rem',
+    fontSize: '1rem',
+    color: vars.no11textContrastLow,
+    marginBottom: '1rem'
 })
 
 globalStyle('p', {
