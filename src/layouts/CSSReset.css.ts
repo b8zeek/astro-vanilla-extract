@@ -38,17 +38,38 @@ globalStyle('h1', {
 })
 
 globalStyle('h2', {
-    lineHeight: '1.5rem',
-    fontSize: '1.75rem',
+    lineHeight: '2rem',
+    fontSize: '2rem',
     color: vars.no12textContrastHigh,
     marginBottom: '1.25rem'
 })
 
 globalStyle('h3', {
-    lineHeight: '1.25rem',
-    fontSize: '1.5rem',
+    lineHeight: '1.75rem',
+    fontSize: '1.75rem',
     color: vars.no11textContrastLow,
     marginBottom: '1.25rem'
+})
+
+globalStyle('h4', {
+    lineHeight: '1.5rem',
+    fontSize: '1.5rem',
+    color: vars.no11textContrastLow,
+    marginBottom: '1rem'
+})
+
+globalStyle('h5', {
+    lineHeight: '1.25rem',
+    fontSize: '1.25rem',
+    color: vars.no11textContrastLow,
+    marginBottom: '1rem'
+})
+
+globalStyle('h6', {
+    lineHeight: '1rem',
+    fontSize: '1rem',
+    color: vars.no11textContrastLow,
+    marginBottom: '1rem'
 })
 
 globalStyle('p', {
@@ -59,10 +80,67 @@ globalStyle('p', {
     letterSpacing: '-0.01em',
     textAlign: 'justify',
     color: vars.no11textContrastLow,
-    opacity: 0.75,
-    marginBottom: '2rem'
+    marginBottom: '1rem'
 })
 
 globalStyle('a', {
     textDecoration: 'none'
+})
+
+globalStyle('hr', {
+    height: '0.25rem',
+    backgroundColor: vars.no10solidBackgroundHovered,
+    border: 'none',
+    margin: '2rem 0'
+})
+
+globalStyle('blockquote', {
+    padding: '0 1rem',
+    borderLeft: `0.25rem solid ${vars.no6bordersNonInteractive}`,
+    marginBottom: '1rem'
+})
+
+globalStyle('pre', {
+    lineHeight: 1.45,
+    padding: '1rem',
+    backgroundColor: vars.no3elementBackground,
+    marginBottom: '1rem'
+})
+
+globalStyle('ul', {
+    lineHeight: 1.5,
+    paddingLeft: '2rem',
+    marginBottom: '1rem'
+})
+
+globalStyle('ol', {
+    lineHeight: 1.5,
+    paddingLeft: '2rem',
+    marginBottom: '1rem'
+})
+
+globalStyle('li', {
+    color: vars.no11textContrastLow
+})
+
+globalStyle('table', {
+    borderCollapse: 'collapse',
+    marginBottom: '1rem'
+})
+
+globalStyle('th', {
+    color: vars.no11textContrastLow
+})
+
+globalStyle('td', {
+    color: vars.no11textContrastLow
+})
+
+globalStyle('th, td', {
+    padding: '0.5rem 0.75rem',
+    border: `1px solid ${vars.no6bordersNonInteractive}`
+})
+
+globalStyle('img', {
+    width: '100%'
 })
