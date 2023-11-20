@@ -80,7 +80,6 @@ globalStyle('p', {
     letterSpacing: '-0.01em',
     textAlign: 'justify',
     color: vars.no11textContrastLow,
-    opacity: 0.75,
     marginBottom: '1rem'
 })
 
@@ -118,4 +117,16 @@ globalStyle('ol', {
     lineHeight: 1.5,
     paddingLeft: '2rem',
     marginBottom: '1rem'
+})
+
+globalStyle('li', {
+    color: vars.no11textContrastLow
+})
+
+globalStyle('th', {
+    color: vars.no11textContrastLow
+})
+
+globalStyle('td', {
+    color: vars.no11textContrastLow
 })
