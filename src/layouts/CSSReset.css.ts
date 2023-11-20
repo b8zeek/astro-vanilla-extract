@@ -81,7 +81,7 @@ globalStyle('p', {
     textAlign: 'justify',
     color: vars.no11textContrastLow,
     opacity: 0.75,
-    marginBottom: '2rem'
+    marginBottom: '1rem'
 })
 
 globalStyle('a', {
@@ -93,4 +93,10 @@ globalStyle('hr', {
     backgroundColor: vars.no10solidBackgroundHovered,
     border: 'none',
     margin: '2rem 0'
+})
+
+globalStyle('blockquote', {
+    padding: '0 1rem',
+    borderLeft: `0.25rem solid ${vars.no6bordersNonInteractive}`,
+    marginBottom: '1rem'
 })
