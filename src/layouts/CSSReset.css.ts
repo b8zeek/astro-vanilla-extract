@@ -30,6 +30,8 @@ globalStyle(':root', {
     margin: '0 auto'
 })
 
+// HEADINGS
+
 globalStyle('h1', {
     lineHeight: '3.25rem',
     fontSize: '3rem',
@@ -72,6 +74,8 @@ globalStyle('h6', {
     marginBottom: '1rem'
 })
 
+// PARAGRAPH
+
 globalStyle('p', {
     lineHeight: 1.5,
     fontSize: '1rem',
@@ -83,9 +87,13 @@ globalStyle('p', {
     marginBottom: '1rem'
 })
 
+// ANCHOR
+
 globalStyle('a', {
     textDecoration: 'none'
 })
+
+// HORIZONTAL LINE
 
 globalStyle('hr', {
     height: '0.25rem',
@@ -94,11 +102,15 @@ globalStyle('hr', {
     margin: '2rem 0'
 })
 
+// BLOCKQUOTE
+
 globalStyle('blockquote', {
     padding: '0 1rem',
     borderLeft: `0.25rem solid ${vars.no6bordersNonInteractive}`,
     marginBottom: '1rem'
 })
+
+// CODE
 
 globalStyle('pre', {
     lineHeight: 1.45,
@@ -106,6 +118,8 @@ globalStyle('pre', {
     backgroundColor: vars.no3elementBackground,
     marginBottom: '1rem'
 })
+
+// LISTS
 
 globalStyle('ul', {
     lineHeight: 1.5,
@@ -122,6 +136,8 @@ globalStyle('ol', {
 globalStyle('li', {
     color: vars.no11textContrastLow
 })
+
+// TABLE
 
 globalStyle('table', {
     borderCollapse: 'collapse',
@@ -140,6 +156,8 @@ globalStyle('th, td', {
     padding: '0.5rem 0.75rem',
     border: `1px solid ${vars.no6bordersNonInteractive}`
 })
+
+// IMAGE
 
 globalStyle('img', {
     width: '100%'
