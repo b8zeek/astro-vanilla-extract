@@ -32,45 +32,45 @@ globalStyle(':root', {
 
 // HEADINGS
 
-globalStyle('h1', {
-    lineHeight: '3.25rem',
-    fontSize: '3rem',
+globalStyle('h1, h2, h3, h4, h5, h6', {
+    lineHeight: 1.25,
     color: vars.no12textContrastHigh,
-    marginBottom: '1rem'
+    margin: '1.5rem 0 1rem'
+})
+
+globalStyle('h1', {
+    fontSize: '2rem',
+    paddingBottom: '0.3rem',
+    borderBottom: `1px solid ${vars.no6bordersNonInteractive}`
 })
 
 globalStyle('h2', {
     lineHeight: '2rem',
     fontSize: '2rem',
-    color: vars.no12textContrastHigh,
     marginBottom: '1.25rem'
 })
 
 globalStyle('h3', {
     lineHeight: '1.75rem',
     fontSize: '1.75rem',
-    color: vars.no11textContrastLow,
     marginBottom: '1.25rem'
 })
 
 globalStyle('h4', {
     lineHeight: '1.5rem',
     fontSize: '1.5rem',
-    color: vars.no11textContrastLow,
     marginBottom: '1rem'
 })
 
 globalStyle('h5', {
     lineHeight: '1.25rem',
     fontSize: '1.25rem',
-    color: vars.no11textContrastLow,
     marginBottom: '1rem'
 })
 
 globalStyle('h6', {
     lineHeight: '1rem',
     fontSize: '1rem',
-    color: vars.no11textContrastLow,
     marginBottom: '1rem'
 })
 
