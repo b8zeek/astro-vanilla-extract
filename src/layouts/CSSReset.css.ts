@@ -88,7 +88,9 @@ globalStyle('p', {
 // ANCHOR
 
 globalStyle('a', {
-    textDecoration: 'none'
+    color: vars.no10solidBackgroundHovered,
+    textDecoration: 'underline',
+    textUnderlineOffset: '0.2rem'
 })
 
 // HORIZONTAL LINE
