@@ -1,13 +1,11 @@
 import { globalStyle } from '@vanilla-extract/css'
 
 import { vars } from '../styles/vars.css'
-import { AllianceNo2 } from '../assets/fonts/AllianceNo2.css'
 
 globalStyle('*', {
     margin: 0,
     padding: 0,
-    boxSizing: 'border-box',
-    fontFamily: AllianceNo2
+    boxSizing: 'border-box'
 })
 
 globalStyle('body', {
@@ -20,7 +18,8 @@ globalStyle('body', {
 
 globalStyle(':root', {
     lineHeight: 1.5,
-    fontFamily: 'Inter, system-ui, Avenir, Helvetica, Arial, sans-serif',
+    fontFamily:
+        '-apple-system, BlinkMacSystemFont, Segoe UI, Noto Sans, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji',
     fontWeight: 400,
     fontSynthesis: 'none',
     textRendering: 'optimizeLegibility',
@@ -81,11 +80,9 @@ globalStyle('p, blockquote, ul, ol, dl, table, pre, details', {
 globalStyle('p', {
     lineHeight: 1.5,
     fontSize: '1rem',
-    fontFamily: '   , system-ui, Avenir, Helvetica, Arial, sans-serif',
     fontWeight: 400,
     letterSpacing: '-0.01em',
-    textAlign: 'justify',
-    color: vars.no11textContrastLow
+    textAlign: 'justify'
 })
 
 // ANCHOR
