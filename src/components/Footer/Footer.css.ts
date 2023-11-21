@@ -3,7 +3,13 @@ import { vars } from '../../styles/vars.css'
 
 export const footer = style({
     padding: '5rem 0',
-    backgroundImage: `linear-gradient(${vars.no2subtleBackground}, ${vars.no1appBackground})`
+    backgroundImage: `linear-gradient(${vars.no2subtleBackground}, ${vars.no1appBackground})`,
+
+    '@media': {
+        'screen and (min-width: 1024px)': {
+            display: 'none'
+        }
+    }
 })
 
 export const paragraph = style({
