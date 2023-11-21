@@ -108,6 +108,10 @@ globalStyle('blockquote', {
     marginBottom: '1rem'
 })
 
+globalStyle('blockquote p', {
+    color: vars.no11textContrastLow
+})
+
 // CODE
 
 globalStyle('pre', {
