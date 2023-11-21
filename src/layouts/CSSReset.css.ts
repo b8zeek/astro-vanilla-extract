@@ -192,3 +192,12 @@ globalStyle('sup a::before', {
 globalStyle('sup a::after', {
     content: ']'
 })
+
+// FOOTNOTES
+
+globalStyle('.footnotes li::marker, .footnotes li p', {
+    fontSize: '0.75rem',
+    listStyleType: 'decimal',
+    color: vars.no10solidBackgroundHovered,
+    marginTop: '1rem'
+})
