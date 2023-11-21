@@ -32,10 +32,14 @@ globalStyle(':root', {
 
 // HEADINGS
 
-globalStyle('h1, h2, h3, h4, h5', {
+globalStyle('h1, h2, h3, h4, h5, h6', {
     lineHeight: 1.25,
-    color: vars.no12textContrastHigh,
+    fontWeight: 600,
     margin: '1.5rem 0 1rem'
+})
+
+globalStyle('h1, h2, h3, h4, h5, p', {
+    color: vars.no12textContrastHigh
 })
 
 globalStyle('h1, h2', {
@@ -70,15 +74,18 @@ globalStyle('h6', {
 
 // PARAGRAPH
 
+globalStyle('p, blockquote, ul, ol, dl, table, pre, details', {
+    margin: '0 0 1rem'
+})
+
 globalStyle('p', {
     lineHeight: 1.5,
     fontSize: '1rem',
-    fontFamily: 'Raleyway, system-ui, Avenir, Helvetica, Arial, sans-serif',
+    fontFamily: '   , system-ui, Avenir, Helvetica, Arial, sans-serif',
     fontWeight: 400,
     letterSpacing: '-0.01em',
     textAlign: 'justify',
-    color: vars.no11textContrastLow,
-    marginBottom: '1rem'
+    color: vars.no11textContrastLow
 })
 
 // ANCHOR
@@ -91,9 +98,9 @@ globalStyle('a', {
 
 globalStyle('hr', {
     height: '0.25rem',
-    backgroundColor: vars.no10solidBackgroundHovered,
+    backgroundColor: vars.no6bordersNonInteractive,
     border: 'none',
-    margin: '2rem 0'
+    margin: '1.5rem 0'
 })
 
 // BLOCKQUOTE
