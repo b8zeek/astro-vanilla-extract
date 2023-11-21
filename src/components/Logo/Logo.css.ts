@@ -3,6 +3,7 @@ import { style } from '@vanilla-extract/css'
 export const logo = style({
     display: 'block',
     fontSize: '2.5rem',
+    fontWeight: 700,
     letterSpacing: '-0.2rem',
     whiteSpace: 'nowrap',
     backgroundImage:
