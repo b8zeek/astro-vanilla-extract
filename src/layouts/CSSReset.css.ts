@@ -171,3 +171,24 @@ globalStyle('th, td', {
 globalStyle('img', {
     width: '100%'
 })
+
+// SUBSCRIPT, SUPERSCRIPT
+
+globalStyle('sup', {
+    top: '-0.5rem'
+})
+
+globalStyle('sub, sup', {
+    lineHeight: 0,
+    fontSize: '75%',
+    position: 'relative',
+    verticalAlign: 'baseline'
+})
+
+globalStyle('sup a::before', {
+    content: '['
+})
+
+globalStyle('sup a::after', {
+    content: ']'
+})
