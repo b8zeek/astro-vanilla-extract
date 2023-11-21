@@ -114,19 +114,22 @@ globalStyle('blockquote p', {
 
 // CODE
 
-globalStyle('pre', {
-    lineHeight: 1.45,
-    padding: '1rem',
-    backgroundColor: vars.no3elementBackground,
-    marginBottom: '1rem'
-})
-
 globalStyle('code', {
     fontSize: '85%',
     padding: '0.2rem 0.4rem',
     backgroundColor: vars.no5elementBackgroundActive,
     borderRadius: '6px',
     margin: 0
+})
+
+globalStyle('pre', {
+    lineHeight: 1.45,
+    padding: '1rem',
+    backgroundColor: vars.no3elementBackground
+})
+
+globalStyle('pre code', {
+    backgroundColor: 'transparent'
 })
 
 // LISTS
