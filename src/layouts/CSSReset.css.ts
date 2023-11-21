@@ -121,22 +121,24 @@ globalStyle('pre', {
     marginBottom: '1rem'
 })
 
-// LISTS
-
-globalStyle('ul', {
-    lineHeight: 1.5,
-    paddingLeft: '2rem',
-    marginBottom: '1rem'
+globalStyle('code', {
+    fontSize: '85%',
+    padding: '0.2rem 0.4rem',
+    backgroundColor: vars.no5elementBackgroundActive,
+    borderRadius: '6px',
+    margin: 0
 })
 
-globalStyle('ol', {
+// LISTS
+
+globalStyle('ul, ol', {
     lineHeight: 1.5,
     paddingLeft: '2rem',
     marginBottom: '1rem'
 })
 
 globalStyle('li', {
-    color: vars.no11textContrastLow
+    color: vars.no12textContrastHigh
 })
 
 // TABLE
