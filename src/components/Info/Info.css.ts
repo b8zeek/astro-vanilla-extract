@@ -48,7 +48,6 @@ export const infoContent = style({
             display: 'flex',
             justifyContent: 'center',
             flexDirection: 'column',
-            textAlign: 'center',
             padding: 0,
             margin: 0
         }
