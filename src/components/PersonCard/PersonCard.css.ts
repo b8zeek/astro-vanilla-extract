@@ -26,6 +26,7 @@ export const card = style({
 
 export const cardHeading = style({
     lineHeight: 1,
+    border: 'none',
     margin: 0
 })
 
