@@ -24,5 +24,6 @@ export const anchor = style({
     fontSize: '1rem',
     padding: '0.5rem 1rem',
     color: vars.no11textContrastLow,
+    textDecoration: 'none',
     backgroundColor: vars.no6bordersNonInteractive
 })
