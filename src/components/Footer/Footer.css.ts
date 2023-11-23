@@ -14,6 +14,7 @@ export const footer = style({
 
 export const paragraph = style({
     fontSize: '0.75rem',
+    color: vars.no9solidBackground,
     textAlign: 'center',
     margin: 0
 })
