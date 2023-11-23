@@ -18,7 +18,9 @@ export const vars = createThemeContract({
     no10solidBackgroundHovered: null,
 
     no11textContrastLow: null,
-    no12textContrastHigh: null
+    no12textContrastHigh: null,
+
+    logoBackground: null
 })
 
 export const light = createTheme(vars, {
@@ -37,7 +39,10 @@ export const light = createTheme(vars, {
     no10solidBackgroundHovered: sand.sand10,
 
     no11textContrastLow: sand.sand11,
-    no12textContrastHigh: sand.sand12
+    no12textContrastHigh: sand.sand12,
+
+    logoBackground:
+        'linear-gradient(to right top, rgb(244, 63, 94), rgb(67, 56, 202))'
 })
 
 export const dark = createTheme(vars, {
@@ -56,5 +61,8 @@ export const dark = createTheme(vars, {
     no10solidBackgroundHovered: sandDark.sand10,
 
     no11textContrastLow: sandDark.sand11,
-    no12textContrastHigh: sandDark.sand12
+    no12textContrastHigh: sandDark.sand12,
+
+    logoBackground:
+        'linear-gradient(71.18deg, rgb(0, 34, 255) -27.32%, rgb(0, 34, 255) -16.39%, rgb(81, 121, 254) -7.38%, rgb(165, 237, 182) 30.59%, rgb(250, 232, 90) 46.06%, rgb(253, 172, 62) 62.61%, rgb(255, 92, 0) 75.82%)'
 })
