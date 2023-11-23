@@ -1,6 +1,6 @@
 import { Octokit } from '@octokit/rest'
 
-import { type Repository } from '../models'
+import { type Repository } from '@/models'
 
 export const octokit = new Octokit()
 

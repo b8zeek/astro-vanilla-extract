@@ -1,8 +1,8 @@
 ---
-import Layout from '../../layouts/Layout.astro'
-import { getBlogs } from '../../services/octokit'
+import Layout from '@/layouts/Layout.astro'
+import { getBlogs } from '@/services/octokit'
 
-import BlogCard from '../../components/BlogCard/BlogCard.astro'
+import BlogCard from '@/components/BlogCard/BlogCard.astro'
 
 const blogs = await getBlogs()
 ---
