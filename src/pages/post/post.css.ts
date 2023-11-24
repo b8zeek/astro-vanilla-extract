@@ -1,5 +1,5 @@
 import { style } from '@vanilla-extract/css'
-import { vars } from '../../styles/vars.css'
+import { vars } from '@styles/vars.css'
 
 export const anchor = style({
     display: 'inline-block',

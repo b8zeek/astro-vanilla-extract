@@ -1,8 +1,8 @@
 ---
 import { marked } from 'marked'
-import Layout from '../../layouts/Layout.astro'
-import { getBlogContent } from '../../services/octokit'
-import { type Repository } from '../../models'
+import Layout from '@layouts/Layout.astro'
+import { getBlogContent } from '@services/octokit'
+import { type Repository } from '@models/Repository'
 import { anchor } from './post.css'
 
 interface Props {
