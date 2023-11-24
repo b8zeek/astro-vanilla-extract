@@ -49,15 +49,24 @@ const { title } = Astro.props
 
             const html = document.querySelector('html')!
             const themeToggleButton = document.querySelector('#theme-toggle')!
+            const selectedTheme = localStorage.getItem('theme')
 
-            if (!html.className) html.className = dark
+            if (selectedTheme) {
+                html.className = selectedTheme === 'light' ? light : dark
+            } else {
+                html.className = dark
+            }
 
             const toggleTheme = () => {
                 const currentHtmlClassName = html.className
 
-                html.className = currentHtmlClassName.includes('light')
-                    ? dark
-                    : light
+                if (currentHtmlClassName.includes('dark')) {
+                    html.className = light
+                    localStorage.setItem('theme', 'light')
+                } else {
+                    html.className = dark
+                    localStorage.setItem('theme', 'dark')
+                }
             }
 
             themeToggleButton.addEventListener('click', toggleTheme)
